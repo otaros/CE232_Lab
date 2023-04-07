@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/ADMIN/workspace/lab2/main
+# Install script for directory: C:/Users/ADMIN/workspace/CE232_Lab/Lab2/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/lab2")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Lab2")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

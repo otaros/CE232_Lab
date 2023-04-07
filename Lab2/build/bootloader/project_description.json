@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/bootloader/subproject",
-    "build_dir":          "C:/Users/ADMIN/workspace/lab2/build/bootloader",
-    "config_file":        "C:/Users/ADMIN/workspace/lab2/sdkconfig",
+    "build_dir":          "C:/Users/ADMIN/workspace/CE232_Lab/Lab2/build/bootloader",
+    "config_file":        "C:/Users/ADMIN/workspace/CE232_Lab/Lab2/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
