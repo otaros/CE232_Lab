@@ -8,11 +8,11 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "c:/Users/ADMIN/workspace/lab1/include",
-                "c:/Users/ADMIN/workspace/lab1/src",
+                "c:/Users/ADMIN/workspace/CE232_Lab/Lab1/include",
+                "c:/Users/ADMIN/workspace/CE232_Lab/Lab1/src",
                 "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/xtensa/include",
                 "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/xtensa/esp32/include",
-                "C:/Users/ADMIN/workspace/lab1/.pio/build/esp32doit-devkit-v1/config",
+                "C:/Users/ADMIN/workspace/CE232_Lab/Lab1/.pio/build/esp32doit-devkit-v1/config",
                 "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/newlib/platform_include",
                 "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include",
                 "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/freertos/esp_additions/include/freertos",
@@ -124,11 +124,11 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/ADMIN/workspace/lab1/include",
-                    "c:/Users/ADMIN/workspace/lab1/src",
+                    "c:/Users/ADMIN/workspace/CE232_Lab/Lab1/include",
+                    "c:/Users/ADMIN/workspace/CE232_Lab/Lab1/src",
                     "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/xtensa/include",
                     "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/xtensa/esp32/include",
-                    "C:/Users/ADMIN/workspace/lab1/.pio/build/esp32doit-devkit-v1/config",
+                    "C:/Users/ADMIN/workspace/CE232_Lab/Lab1/.pio/build/esp32doit-devkit-v1/config",
                     "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/newlib/platform_include",
                     "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/freertos/FreeRTOS-Kernel/include",
                     "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/freertos/esp_additions/include/freertos",
