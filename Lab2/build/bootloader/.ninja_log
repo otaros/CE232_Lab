@@ -204,3 +204,5 @@
 6443	6755	7025603646082384	C:/Users/ADMIN/workspace/CE232_Lab/Lab2/build/bootloader/.bin_timestamp	b154feb03e977b3d
 6756	6877	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	8f199976ae330c21
 6756	6877	0	C:/Users/ADMIN/workspace/CE232_Lab/Lab2/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	8f199976ae330c21
+8	209	0	esp-idf/esptool_py/CMakeFiles/bootloader_check_size	8f199976ae330c21
+8	209	0	C:/Users/ADMIN/workspace/CE232_Lab/Lab2/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size	8f199976ae330c21
