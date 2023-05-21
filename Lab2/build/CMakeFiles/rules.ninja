@@ -17,7 +17,7 @@
 rule C_COMPILER__lab2.2eelf_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -46,7 +46,7 @@ rule CUSTOM_COMMAND
 rule ASM_COMPILER____idf_xtensa_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -56,7 +56,7 @@ rule ASM_COMPILER____idf_xtensa_Debug
 rule C_COMPILER____idf_xtensa_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -75,7 +75,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_xtensa_Debug
 rule C_COMPILER____idf_esp_ringbuf_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -94,7 +94,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_ringbuf_Debug
 rule C_COMPILER____idf_efuse_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -113,7 +113,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_efuse_Debug
 rule C_COMPILER____idf_esp_timer_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -132,7 +132,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_timer_Debug
 rule C_COMPILER____idf_driver_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -151,7 +151,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_driver_Debug
 rule C_COMPILER____idf_esp_pm_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -170,7 +170,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_pm_Debug
 rule ASM_COMPILER____idf_mbedtls_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -180,7 +180,7 @@ rule ASM_COMPILER____idf_mbedtls_Debug
 rule C_COMPILER____idf_mbedtls_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -199,7 +199,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_mbedtls_Debug
 rule C_COMPILER__mbedcrypto_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -220,7 +220,7 @@ rule CXX_STATIC_LIBRARY_LINKER__mbedcrypto_Debug
 rule C_COMPILER__mbedx509_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -239,7 +239,7 @@ rule CXX_STATIC_LIBRARY_LINKER__mbedx509_Debug
 rule C_COMPILER__mbedtls_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -258,7 +258,7 @@ rule CXX_STATIC_LIBRARY_LINKER__mbedtls_Debug
 rule C_COMPILER____idf_esp_app_format_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -277,7 +277,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_app_format_Debug
 rule C_COMPILER____idf_bootloader_support_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -296,7 +296,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_bootloader_support_Debug
 rule C_COMPILER____idf_esp_partition_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -315,7 +315,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_partition_Debug
 rule C_COMPILER____idf_app_update_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -334,7 +334,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_app_update_Debug
 rule C_COMPILER____idf_spi_flash_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -353,7 +353,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_spi_flash_Debug
 rule C_COMPILER____idf_pthread_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -372,7 +372,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_pthread_Debug
 rule ASM_COMPILER____idf_esp_system_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -382,7 +382,7 @@ rule ASM_COMPILER____idf_esp_system_Debug
 rule C_COMPILER____idf_esp_system_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -401,7 +401,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_system_Debug
 rule C_COMPILER____idf_esp_common_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -420,7 +420,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_common_Debug
 rule ASM_COMPILER____idf_esp_rom_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -430,7 +430,7 @@ rule ASM_COMPILER____idf_esp_rom_Debug
 rule C_COMPILER____idf_esp_rom_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -449,7 +449,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_rom_Debug
 rule C_COMPILER____idf_hal_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -468,7 +468,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_hal_Debug
 rule C_COMPILER____idf_log_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -487,7 +487,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_log_Debug
 rule C_COMPILER____idf_heap_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -506,7 +506,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_heap_Debug
 rule C_COMPILER____idf_soc_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -525,7 +525,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_soc_Debug
 rule C_COMPILER____idf_esp_hw_support_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -544,7 +544,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_hw_support_Debug
 rule ASM_COMPILER____idf_freertos_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -554,7 +554,7 @@ rule ASM_COMPILER____idf_freertos_Debug
 rule C_COMPILER____idf_freertos_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -573,7 +573,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_freertos_Debug
 rule C_COMPILER____idf_newlib_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -592,7 +592,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_newlib_Debug
 rule CXX_COMPILER____idf_cxx_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -611,7 +611,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_cxx_Debug
 rule ASM_COMPILER____idf___pio_env_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -621,7 +621,7 @@ rule ASM_COMPILER____idf___pio_env_Debug
 rule C_COMPILER____idf___pio_env_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -631,7 +631,7 @@ rule C_COMPILER____idf___pio_env_Debug
 rule CXX_COMPILER____idf___pio_env_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -650,7 +650,7 @@ rule C_STATIC_LIBRARY_LINKER____idf___pio_env_Debug
 rule C_COMPILER____idf_app_trace_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -669,7 +669,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_app_trace_Debug
 rule C_COMPILER____idf_esp_event_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -688,7 +688,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_event_Debug
 rule CXX_COMPILER____idf_nvs_flash_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -707,7 +707,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_nvs_flash_Debug
 rule C_COMPILER____idf_esp_phy_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -726,7 +726,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_phy_Debug
 rule C_COMPILER____idf_vfs_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -745,7 +745,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_vfs_Debug
 rule C_COMPILER____idf_lwip_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -764,7 +764,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_lwip_Debug
 rule C_COMPILER____idf_esp_netif_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -783,7 +783,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_netif_Debug
 rule C_COMPILER____idf_wpa_supplicant_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -804,7 +804,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wpa_supplicant_Debug
 rule C_COMPILER____idf_esp_wifi_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -823,7 +823,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_wifi_Debug
 rule C_COMPILER____idf_unity_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -842,7 +842,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_unity_Debug
 rule C_COMPILER____idf_cmock_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -861,7 +861,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_cmock_Debug
 rule C_COMPILER____idf_console_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -880,7 +880,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_console_Debug
 rule C_COMPILER____idf_http_parser_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -899,7 +899,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_http_parser_Debug
 rule C_COMPILER____idf_esp-tls_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -918,7 +918,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp-tls_Debug
 rule C_COMPILER____idf_esp_adc_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -937,7 +937,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_adc_Debug
 rule C_COMPILER____idf_esp_eth_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -956,7 +956,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_eth_Debug
 rule ASM_COMPILER____idf_esp_gdbstub_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -966,7 +966,7 @@ rule ASM_COMPILER____idf_esp_gdbstub_Debug
 rule C_COMPILER____idf_esp_gdbstub_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -985,7 +985,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_gdbstub_Debug
 rule C_COMPILER____idf_esp_hid_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1004,7 +1004,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_hid_Debug
 rule C_COMPILER____idf_tcp_transport_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1023,7 +1023,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_tcp_transport_Debug
 rule C_COMPILER____idf_esp_http_client_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1042,7 +1042,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_http_client_Debug
 rule C_COMPILER____idf_esp_http_server_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1061,7 +1061,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_http_server_Debug
 rule C_COMPILER____idf_esp_https_ota_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1080,7 +1080,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_https_ota_Debug
 rule C_COMPILER____idf_esp_lcd_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1099,7 +1099,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_lcd_Debug
 rule C_COMPILER____idf_protobuf-c_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1118,7 +1118,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_protobuf-c_Debug
 rule C_COMPILER____idf_protocomm_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1137,7 +1137,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_protocomm_Debug
 rule C_COMPILER____idf_esp_local_ctrl_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1156,7 +1156,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_esp_local_ctrl_Debug
 rule C_COMPILER____idf_espcoredump_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1175,7 +1175,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_espcoredump_Debug
 rule CXX_COMPILER____idf_wear_levelling_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -1194,7 +1194,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wear_levelling_Debug
 rule C_COMPILER____idf_sdmmc_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1213,7 +1213,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_sdmmc_Debug
 rule C_COMPILER____idf_fatfs_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1232,7 +1232,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_fatfs_Debug
 rule C_COMPILER____idf_json_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1251,7 +1251,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_json_Debug
 rule C_COMPILER____idf_mqtt_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1270,7 +1270,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_mqtt_Debug
 rule C_COMPILER____idf_perfmon_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1289,7 +1289,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_perfmon_Debug
 rule C_COMPILER____idf_spiffs_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1308,7 +1308,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_spiffs_Debug
 rule C_COMPILER____idf_ulp_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1327,7 +1327,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_ulp_Debug
 rule C_COMPILER____idf_wifi_provisioning_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -1346,7 +1346,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_wifi_provisioning_Debug
 rule C_COMPILER____idf_main_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ccache C:\Users\ADMIN\.espressif\tools\xtensa-esp32-elf\esp-2022r1-11.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
