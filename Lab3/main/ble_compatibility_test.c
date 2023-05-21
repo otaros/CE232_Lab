@@ -562,10 +562,6 @@ static void gatts_profile_event_handler(esp_gatts_cb_event_t event, esp_gatt_if_
         {
             ESP_LOGE(EXAMPLE_TAG, "(2) ***** read char1 ***** \n");
         }
-        // if (gatt_db_handle_table[IDX_CHAR_VAL_B] == param->read.handle)
-        // {
-        //     ESP_LOGE(EXAMPLE_TAG, "(5) ***** read char2 ***** \n");
-        // }
         break;
     case ESP_GATTS_WRITE_EVT:
         if (!param->write.is_prep)
