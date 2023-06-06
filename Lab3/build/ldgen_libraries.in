@@ -1,7 +1,6 @@
 $<TARGET_FILE:__idf_xtensa>
 $<TARGET_FILE:__idf_esp_ringbuf>
 $<TARGET_FILE:__idf_efuse>
-$<TARGET_FILE:__idf_esp_timer>
 $<TARGET_FILE:__idf_driver>
 $<TARGET_FILE:__idf_esp_pm>
 $<TARGET_FILE:__idf_mbedtls>
@@ -12,7 +11,6 @@ $<TARGET_FILE:__idf_app_update>
 $<TARGET_FILE:__idf_spi_flash>
 $<TARGET_FILE:__idf_pthread>
 $<TARGET_FILE:__idf_esp_system>
-$<TARGET_FILE:__idf_esp_common>
 $<TARGET_FILE:__idf_esp_rom>
 $<TARGET_FILE:__idf_hal>
 $<TARGET_FILE:__idf_log>
@@ -22,7 +20,8 @@ $<TARGET_FILE:__idf_esp_hw_support>
 $<TARGET_FILE:__idf_freertos>
 $<TARGET_FILE:__idf_newlib>
 $<TARGET_FILE:__idf_cxx>
-$<TARGET_FILE:__idf___pio_env>
+$<TARGET_FILE:__idf_esp_common>
+$<TARGET_FILE:__idf_esp_timer>
 $<TARGET_FILE:__idf_app_trace>
 $<TARGET_FILE:__idf_esp_event>
 $<TARGET_FILE:__idf_nvs_flash>

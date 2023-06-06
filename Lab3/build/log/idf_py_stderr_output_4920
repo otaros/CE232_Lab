@@ -1,9 +1,0 @@
-fatal: not a git repository (or any of the parent directories): .git
-CMake Warning at C:/Users/ADMIN/.platformio/packages/framework-espidf/tools/cmake/project.cmake:337 (message):
-  enabled ccache in build but ccache program not found
-Call Stack (most recent call first):
-  CMakeLists.txt:6 (project)
-
-
-fatal: not a git repository (or any of the parent directories): .git
-fatal: not a git repository: C:/Users/ADMIN/.platformio/packages/framework-espidf/components/openthread/openthread/../../../.git/modules/components/openthread/openthread

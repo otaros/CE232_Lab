@@ -1,7 +1,6 @@
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/xtensa/libxtensa.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_ringbuf/libesp_ringbuf.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/efuse/libefuse.a
-C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_timer/libesp_timer.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/driver/libdriver.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_pm/libesp_pm.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/mbedtls/libmbedtls.a
@@ -12,7 +11,6 @@ C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/app_update/libapp_update.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/spi_flash/libspi_flash.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/pthread/libpthread.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_system/libesp_system.a
-C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_common/libesp_common.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_rom/libesp_rom.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/hal/libhal.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/log/liblog.a
@@ -22,7 +20,8 @@ C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_hw_support/libesp_hw_s
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/freertos/libfreertos.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/newlib/libnewlib.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/cxx/libcxx.a
-C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/__pio_env/lib__pio_env.a
+C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_common/libesp_common.a
+C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_timer/libesp_timer.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/app_trace/libapp_trace.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_event/libesp_event.a
 C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/nvs_flash/libnvs_flash.a

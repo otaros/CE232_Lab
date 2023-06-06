@@ -2,7 +2,7 @@
     "configurations": [
         {
             "name": "ESP-IDF",
-            "compilerPath": "C:\\Users\\ADMIN\\.platformio\\packages\\toolchain-xtensa-esp32\\bin\\xtensa-esp32-elf-gcc.exe",
+            "compilerPath": "c:\\Espressif\\tools\\xtensa-esp32-elf\\esp-2022r1-11.2.0\\xtensa-esp32-elf\\bin\\xtensa-esp32-elf-gcc.exe",
             "includePath": [
                 "${config:idf.espIdfPath}/components/**",
                 "${config:idf.espIdfPathWin}/components/**",
@@ -19,7 +19,9 @@
                     "${workspaceFolder}"
                 ],
                 "limitSymbolsToIncludedHeaders": false
-            }
+            },
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
     "version": 4

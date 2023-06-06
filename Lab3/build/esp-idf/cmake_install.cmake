@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/ADMIN/.platformio/packages/framework-espidf
+# Install script for directory: C:/Espressif/frameworks/esp-idf-v5.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/ADMIN/.platformio/packages/toolchain-xtensa-esp32/bin/xtensa-esp32-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -50,11 +50,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
   include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/efuse/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_timer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -124,11 +119,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_common/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
   include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_rom/cmake_install.cmake")
 endif()
 
@@ -174,7 +164,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/__pio_env/cmake_install.cmake")
+  include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_common/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/esp-idf/esp_timer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

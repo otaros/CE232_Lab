@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Users/ADMIN/.platformio/packages/framework-espidf/components/bootloader/subproject"
+  "C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader/subproject"
   "C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/bootloader"
   "C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/bootloader-prefix"
   "C:/Users/ADMIN/workspace/CE232_Lab/Lab3/build/bootloader-prefix/tmp"
