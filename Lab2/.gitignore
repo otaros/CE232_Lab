@@ -1,5 +1,11 @@
-build/
+build
 sdkconfig
 sdkconfig.old
+<<<<<<<< HEAD:Lab2/.gitignore
 .vscode/
 managed_components
+========
+.vscode
+managed_components
+dependencies.lock
+>>>>>>>> Lab5_Node:Lab5/Lab5_Node/.gitignore
