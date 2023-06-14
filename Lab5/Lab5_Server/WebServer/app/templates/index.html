@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Display Data</title>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+			@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+			body {
+				font-family: 'Roboto', sans-serif;
+				background-color: #d2e9e9;
+				box-sizing: border-box;
+				margin: 20px auto;
+			}
+
+			.title {
+				font-family: 'SF Pro Display', sans-serif;
+				font-size: 20px;
+				background: #4a30cf;
+				background: linear-gradient(to top, #4a30cf 0%, #cf1d23 100%);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				text-align: center;
+				font-weight: bolder;
+				text-transform: uppercase;
+			}
+
+			.content {
+				background-color: white;
+				text-align: left;
+				margin: 0 20px;
+				border-radius: 10px;
+				padding: 20px;
+			}
+
+			ul {
+				list-style-type: none;
+			}
+
+			.chart {
+				margin: 20px;
+				padding: 20px;
+				background-color: white;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="title">
+			<h1>Bài thực hành Lab 5</h1>
+		</div>
+
+		<div class="chart">
+			<canvas id="myChart"></canvas>
+		</div>
+
+		<div class="content">
+			<h2>Giảng viên Trần Hoàng Lộc</h2>
+			<h3>Sinh viên thực hiện: nhóm 7</h3>
+
+			<ul>
+				<li>Trương Hữu Khang</li>
+				<li>Nguyễn Linh Anh Khoa</li>
+				<li>Hà Vĩnh Kiện</li>
+				<li>Phan Duy Thông</li>
+			</ul>
+		</div>
+
+		<script>
+			var ctx = document.getElementById('myChart').getContext('2d')
+			var myChart = new Chart(ctx, {
+				type: 'line',
+				data: {
+					labels: [],
+					datasets: [
+						{
+							label: 'Temperature',
+							data: [],
+							backgroundColor: 'rgba(255, 99, 132, 0.2)',
+							borderColor: 'rgba(255, 99, 132, 1)',
+							borderWidth: 1,
+						},
+						{
+							label: 'Humidity',
+							data: [],
+							backgroundColor: 'rgba(54, 162, 235, 0.2)',
+							borderColor: 'rgba(54, 162, 235, 1)',
+							borderWidth: 1,
+						},
+					],
+				},
+				options: {
+					scales: {
+						yAxes: [
+							{
+								ticks: {
+									beginAtZero: true,
+								},
+							},
+						],
+					},
+				},
+			})
+
+			$(document).ready(function () {
+				// Gọi API để lấy dữ liệu nhiệt độ và độ ẩm mới nhất
+				$.getJSON('/api/data', function (data) {
+					// Cập nhật dữ liệu lên biểu đồ
+					myChart.data.labels.push(new Date().toLocaleTimeString())
+					myChart.data.datasets[0].data.push(data.temperature)
+					myChart.data.datasets[1].data.push(data.humidity)
+					myChart.update()
+				})
+				// Cập nhật dữ liệu mỗi 10 giây
+				setInterval(function () {
+					$.getJSON('/api/data', function (data) {
+						myChart.data.labels.push(new Date().toLocaleTimeString())
+						myChart.data.datasets[0].data.push(data.temperature)
+						myChart.data.datasets[1].data.push(data.humidity)
+						myChart.update()
+					})
+				}, 10000)
+			})
+		</script>
+	</body>
+</html>
