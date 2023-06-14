@@ -20,7 +20,8 @@ def get_data():
 
 # Hàm xử lý khi nhận được dữ liệu từ MQTT broker
 def on_message(client, userdata, message):
-    print("received message =", str(message.payload.decode("utf-8")))
+    global temperature, humidity
+    print("Received message: ", str(message.payload.decode("utf-8")))
     # Lấy dữ liệu từ message payload
     data = message.payload.decode()
     temperature, humidity = data.split(',')
