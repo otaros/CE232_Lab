@@ -13,12 +13,18 @@ os.environ['TZ'] = 'Asia/Bangkok'
 uri = "mongodb+srv://otaros0:CP5OhD7CRWovQghi@cluster0.e8yflsz.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(uri, server_api=ServerApi("1"))
 
-mydb = client["mydatabase"]
-mycol = mydb["customers"]
+mydb = client["CE232_Lab"]
+mycol = mydb["Lab5_Nhom7"]
 
 def on_message(client_mqtt, userdata, message):
     print("received message =", str(message.payload.decode("utf-8")))
-    doc = json.loads(str(message.payload.decode("utf-8")))
+    doc = {}
+    data = message.payload.decode()
+    temperature, humidity = data.split(',')
+    temperature = float(temperature)
+    humidity = float(humidity)
+    doc['temperature'] = temperature
+    doc['humidity'] = humidity
     doc['timestamp'] = str(datetime.now())
     doc['timezone'] = str(datetime.now().astimezone().tzinfo)
     mycol.insert_one(doc)
@@ -30,11 +36,7 @@ client_mqtt.on_message = on_message
 client_mqtt.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
 client_mqtt.username_pw_set(username="dataprocess", password="&447s92E")
 client_mqtt.connect(broker_address, port=8883)
-client_mqtt.subscribe("temperature_humidity/data", qos=1)
+client_mqtt.subscribe("temperature_humidity/data")
 
-
-# Send a ping to confirm a successful connection
-for db_name in client.list_database_names():
-    print(db_name)
 
 client_mqtt.loop_forever()
