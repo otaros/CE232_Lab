@@ -28,9 +28,9 @@ broker_address = "410e88d4c6f74067af21eb2712fbc8a4.s2.eu.hivemq.cloud"
 client_mqtt = paho.Client(client_id="", userdata=None, protocol=paho.MQTTv5)
 client_mqtt.on_message = on_message
 client_mqtt.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
-client_mqtt.username_pw_set(username="pchost", password="&447s92E")
+client_mqtt.username_pw_set(username="dataprocess", password="&447s92E")
 client_mqtt.connect(broker_address, port=8883)
-client_mqtt.subscribe("test", qos=1)
+client_mqtt.subscribe("temperature_humidity/data", qos=1)
 
 
 # Send a ping to confirm a successful connection
