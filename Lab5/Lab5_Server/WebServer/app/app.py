@@ -42,10 +42,9 @@ temperature = 0
 humidity = 0
 
 client.subscribe("temperature_humidity/data")
-# client.publish("temperature_humidity/get_data", "get_data")
 
 if __name__ == '__main__':
     # Start MQTT client
     client.loop_start()
     # Start Flask app
-    app.run(debug=True)
+    app.run()
