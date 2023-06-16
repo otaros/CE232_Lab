@@ -280,28 +280,6 @@ static esp_err_t i2c_master_init(void)
     return i2c_driver_install(i2c_master_port, conf.mode, 0, 0, 0);
 }
 
-void ssd1306_show_sensor_data(ssd1306_handle_t *dev, aht_t *aht)
-{
-    float temperature, humidity;
-    uint8_t str[64];
-    i2cdev_init();
-    esp_err_t res = aht_get_data(&aht20, &temperature, &humidity);
-    if (res == ESP_OK)
-        ESP_LOGI(TAG_I2C, "Temperature: %.1f°C, Humidity: %.2f%%", temperature, humidity);
-    else
-        ESP_LOGE(TAG_I2C, "Error reading data: %d (%s)", res, esp_err_to_name(res));
-    i2cdev_done();
-
-    i2c_master_init();
-    sprintf((char *)str, "Temperature: %.2f", temperature);
-    ssd1306_draw_string(ssd1306, 0, 0, (uint8_t *)str, 12, 1);
-    sprintf((char *)str, "Humidity: %.2f", humidity);
-    ssd1306_draw_string(ssd1306, 0, 16, (uint8_t *)str, 12, 1);
-    ssd1306_refresh_gram(ssd1306);
-    i2c_driver_delete(I2C_NUM_0);
-    sprintf((char *)str, "%.2f,%.2f", temperature, humidity);
-    esp_mqtt_client_publish(client, "temperature_humidity/data", (char *)str, 0, 1, 0);
-}
 void app_main(void)
 {
     s_mqtt_event_group = xEventGroupCreate();
